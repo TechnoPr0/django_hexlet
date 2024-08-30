@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html', context={'who' : 'kIRILL'})
+    return render(request, 'base.html', context={'who' : 'kIRILL'})
 
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'base_about.html')
