@@ -8,11 +8,14 @@ class Articles(View):
         return HttpResponse('Hello, World!')
 
 
-"""def index(request):
+def article(request, tags, article_id):
     return render(
         request,
         'articles/base_articles.html',
-        context={'tags': 'article'}
-    )"""
+        context={
+            'tags': tags,
+            'article_id': article_id
+        }
+    )
 
 # Create your views here.
