@@ -12,7 +12,7 @@
         {% block sidebar %}
         <ul>
             <li><a href="/">Главная</a></li>
-            <li><a href="/articles/">Статьи</a></li>
+            <li><a href="{% url 'articles' %}">Статьи</a></li>
             <li><a href="/about">О блоке</a></li>
         </ul>
         {% endblock %}
